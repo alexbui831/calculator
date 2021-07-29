@@ -1,0 +1,87 @@
+#page-container {
+    display:flex;
+    flex-direction: column;
+}
+#header {
+    display:flex;
+    justify-content: center;
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-auto-rows: 90px;
+    justify-content: center;
+    background: blue;
+    margin-left: 270px;
+    margin-right: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-areas:
+    "display display display display"
+    "btnclear btnclear btndelete btndelete"
+    "btn7 btn8 btn9 btnadd"
+    "btn4 btn5 btn6 btnsubtract"
+    "btn1 btn2 btn3 btnmultiply"
+    "btndecimal btn0 btnequal btndivide"
+}
+.display {
+    justify-content: right;
+    grid-area: display;
+    background-color: white;
+    font-size: 20px;
+}
+.btn-clear {
+    grid-area: btnclear;
+}
+.btn-delete {
+    grid-area: btndelete;
+}
+.btn-add {
+    grid-area: btnadd;
+}
+.btn-subtract {
+    grid-area: btnsubtract;
+}
+.btn-multiply {
+    grid-area: btnmultiply;
+}
+.btn-divide {
+    grid-area: btndivide;
+}
+.btn-equal {
+    grid-area: btnequal;
+}
+.btn-decimal {
+    grid-area: btndecimal;
+}
+.btn9 {
+    grid-area: btn9;
+}
+.btn8 {
+    grid-area: btn8;
+}
+.btn7 {
+    grid-area: btn7;
+}
+.btn6 {
+    grid-area: btn6;
+}
+.btn5 {
+    grid-area: btn5;
+}
+.btn4 {
+    grid-area: btn4;
+}
+.btn3 {
+    grid-area: btn3;
+}
+.btn2 {
+    grid-area: btn2;
+}
+.btn1 {
+    grid-area: btn1;
+}
+.btn0 {
+    grid-area: btn0
+}
