@@ -11,29 +11,33 @@
 
 <body>
     <div id="page-container">
-        <div id="header">
+        <div id="header-container">
             <h1>calculator</h1>
         </div>
         <div id="button-container">
-            <div class="display">number</div>
-            <button class="btn-clear">Clear</button>
-            <button class="btn-delete">Delete</button>
-            <button class="btn9">9</button>
-            <button class="btn8">8</button>
-            <button class="btn7">7</button>
-            <button class="btn6">6</button>
-            <button class="btn5">5</button>
-            <button class="btn4">4</button>
-            <button class="btn3">3</button>
-            <button class="btn2">2</button>
-            <button class="btn1">1</button>
-            <button class="btn0">0</button>
-            <button class="btn-decimal">.</button>
-            <button class="btn-add">+</button>
-            <button class="btn-subtract">-</button>
-            <button class="btn-multiply">x</button>
-            <button class="btn-divide">/</button>
-            <button class="btn-equal">=</button>
+            <div class="display-container">
+                <div data-previous class="previous-number"></div>
+                <div data-current class="current-number"></div>
+            </div>
+            <button data-all-clear class="btn-clear btnstyle">AC</button>
+            <button data-delete class="btn-delete btnstyle">C</button>
+            <button data-percent class="btn-percent btnstyle">%</button>
+            <button data-number class="btn9 btnstyle">9</button>
+            <button data-number class="btn8 btnstyle">8</button>
+            <button data-number class="btn7 btnstyle">7</button>
+            <button data-number class="btn6 btnstyle">6</button>
+            <button data-number class="btn5 btnstyle">5</button>
+            <button data-number class="btn4 btnstyle">4</button>
+            <button data-number class="btn3 btnstyle">3</button>
+            <button data-number class="btn2 btnstyle">2</button>
+            <button data-number class="btn1 btnstyle">1</button>
+            <button data-number class="btn0 btnstyle">0</button>
+            <button data-number class="btn-decimal btnstyle">.</button>
+            <button data-operation class="btn-add btnstyle">+</button>
+            <button data-operation class="btn-subtract btnstyle">-</button>
+            <button data-operation class="btn-multiply btnstyle">x</button>
+            <button data-operation class="btn-divide btnstyle">÷</button>
+            <button data-equal class="btn-equal btnstyle">=</button>
         </div>
     </div>
 

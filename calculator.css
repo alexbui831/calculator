@@ -1,38 +1,86 @@
-#page-container {
-    display:flex;
-    flex-direction: column;
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: comic sans ms, papyrus;
+    font-weight: normal;
 }
-#header {
-    display:flex;
+body {
+    padding: 0;
+    margin: 0;
+    background: #48cae4;
+}
+#page-container {
+    display: grid;
     justify-content: center;
+}
+#header-container {
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
 }
 
 #button-container {
     display: grid;
-    grid-template-columns: repeat(4, 80px);
-    grid-auto-rows: 90px;
     justify-content: center;
-    background: blue;
-    margin-left: 270px;
-    margin-right: 270px;
+    background-color: slategray;    
+    border-radius: 3%;
+    grid-template-columns: repeat(4, 93px);
+    grid-auto-rows: 90px;
+    width: 400px;
     padding-top: 10px;
     padding-bottom: 10px;
     grid-template-areas:
     "display display display display"
-    "btnclear btnclear btndelete btndelete"
-    "btn7 btn8 btn9 btnadd"
-    "btn4 btn5 btn6 btnsubtract"
-    "btn1 btn2 btn3 btnmultiply"
-    "btndecimal btn0 btnequal btndivide"
+    "btnclear btndelete btnpercent btnadd"
+    "btn7 btn8 btn9 btnsubtract"
+    "btn4 btn5 btn6 btnmultiply"
+    "btn1 btn2 btn3 btndivide"
+    "btndecimal btn0 btnequal btnequal"
 }
-.display {
-    justify-content: right;
+.display-container {
+    position: relative;
     grid-area: display;
-    background-color: white;
-    font-size: 20px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid black;
+    border-radius: 3%;
+    
+}
+.previous-number {
+    position: absolute;
+    bottom: 65px;
+    right: 0px;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, .75);
+}
+.current-number {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 45px;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#button-container > button {
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+    border-radius: 3%;
+}
+
+#button-container > button:hover {
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 .btn-clear {
     grid-area: btnclear;
+}
+.btn-negative {
+    grid-area: btnnegative;
+}
+.btn-percent {
+    grid-area: btnpercent;
 }
 .btn-delete {
     grid-area: btndelete;
