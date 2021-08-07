@@ -36,6 +36,13 @@ body {
     "btn1 btn2 btn3 btndivide"
     "btndecimal btn0 btnequal btnequal"
 }
+#info-container {
+    display: flex;
+    justify-content: center;
+}
+#info-container > p {
+    font-size: 11px;
+}
 .display-container {
     position: relative;
     grid-area: display;
