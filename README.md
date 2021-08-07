@@ -1,4 +1,6 @@
 # calculator
+August 5th 2021
+
 A web app calculator created using  HTML, CSS, and Javascript for the Odin Project curriculum
 
 Final Thoughts:
